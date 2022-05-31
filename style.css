@@ -55,6 +55,33 @@ body {
 }
 
 
+/*transition para el navbar*/
+
+
+
+.controlesdenavegacion:hover {
+    transition: 1s;
+    background-color: rgb(209, 187, 187);
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .img-carrusel {
     /*aun no me decido en las img por eso llevan id y abajo del css puse mi otra idea en un comentario*/
