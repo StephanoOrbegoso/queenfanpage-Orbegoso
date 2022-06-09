@@ -1,8 +1,199 @@
 // comentario en sass
 /*comentario en sass y css*/
 
+
+$color-principal: rgba(240, 248, 255, 0.626);
+$color-fondonav: rgb(209, 187, 187);
+$backgroundcolor: rgba(0, 0, 0, 0.641);
+
+
+
 body {
-    background-image: url("img/back-ground2.jpg");
-    background-repeat: repeat;
-    background-attachment: fixed;
+    background-color: $backgroundcolor;
+}
+
+.divlogo {
+    width: 100%;
+    background-color: $color-principal;
+    display: flex;
+    justify-content: space-around;
+
+    .logoqueen {
+        width: 19%;
+        height: 12%;
+    }
+}
+
+.zonanav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.749);
+    list-style-type: none;
+    flex-wrap: wrap;
+
+    .controlesdenavegacion {
+        font-size: 1.3vw;
+        list-style-type: none;
+        color: white;
+        border: 2px $color-fondonav;
+        padding: 0 6% 0 6%;
+        border-style: solid;
+    }
+
+    .controlesdenavegacion:hover {
+        transition: 1s;
+        background-color: $color-fondonav;
+        color: black;
+    }
+}
+
+
+#historia {
+    display: flex;
+    justify-self: center;
+
+    p {
+        font-size: 2em;
+        font-style: italic;
+        color: aliceblue;
+        background-color: rgb(53, 48, 48);
+        margin: 13% 0 13% 0;
+    }
+}
+
+.sectionflecha {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 6%;
+
+    .flechafijada {
+        width: 100%;
+        margin-left: auto;
+        display: block;
+        position: sticky;
+    }
+}
+
+.popularesgrid {
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 98%);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3%;
+
+    .divyoutubetittles {
+        width: 100%;
+        height: 13%;
+        font-size: 1.5em;
+        background-color: beige;
+
+        .youtubetittles {
+            color: brown;
+        }
+    }
+}
+
+#playlist {
+    margin: 40% 0 0 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+#canciones {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 8% 0 6% 0;
+
+    .navcanciones {
+        color: white;
+        text-decoration: none;
+
+        .masterlistofsongs {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            column-count: 2;
+
+            .licanciones {
+                margin: 3% 0 3% 0;
+
+                .liespecial {
+                    margin-top: 2%;
+                    border-top: dashed;
+                }
+
+                .listofsongs {
+                    font-size: 150%;
+                    color: rgb(0, 0, 0);
+                    background-color: rgba(255, 255, 255, 0.845);
+                    border: 1% black;
+                    border-style: solid;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+#nosotros {
+
+    width: 100%;
+    background-color: rgb(81, 81, 81);
+    margin: 30% 0 13% 0;
+
+    .defansparafans {
+        font-size: 3em;
+        color: rgb(129, 194, 245);
+        background-color: rgba(143, 143, 227, 0.445);
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .sectionfooter {
+        width: 100%;
+        height: 20%;
+
+        display: flex;
+        justify-content: space-around;
+
+        .navredsocial {
+            display: flex;
+            justify-content: center;
+
+            .ulredsocial {
+
+                height: 100%;
+                width: 100%;
+
+                display: flex;
+                justify-content: space-between;
+
+                .liredsocial {
+                    width: 30%;
+                    height: 10%;
+
+                    .redsocial {
+                        width: 50%;
+                    }
+
+                }
+
+            }
+
+        }
+
+
+    }
+
 }
